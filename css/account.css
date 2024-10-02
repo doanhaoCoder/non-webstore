@@ -1,0 +1,69 @@
+/* css cho trang tài khoảng */
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    width: 600px;
+}
+.input-group>input{
+    width: 600px;
+    outline: none;
+    margin: 5px auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px var(--cl--boder) solid;
+    padding-left: 12px;
+}
+
+.btnLogin{
+    background: linear-gradient(to right, var(--cl--theme), var(--cl--theme2));
+    color: var(--cl--light);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btnLogin:hover{
+    background: linear-gradient(to right, var(--cl--theme2), var(--cl--inportant));
+    transition: 0.4s;
+}
+
+.form-login a{
+    color: var(--cl--text);
+}
+
+.top{
+    display: none;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+.content input:focus{
+    box-shadow: 0 0 0 4px rgb(255 232 240);
+    border-color: var(--cl--theme);
+}
+
+.input-group > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group > div> a{
+    margin: 5px auto;
+}
+
+.bottom{
+    width: 100vw;
+}
+@media screen and (min-width: 0px) and (max-width: 1190px) {
+    .input-group {
+        width: 80%;
+    }
+    .input-group input{
+        width: 100%;
+    }
+}

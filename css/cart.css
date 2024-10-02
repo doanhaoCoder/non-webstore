@@ -1,0 +1,113 @@
+/* css cho trang giỏ hàng */
+@media screen and (min-width: 0px) and (max-width: 1190px) {
+    .nav>li{
+        display: block;
+        height: 100%;
+        margin: auto 45px;
+    }
+    .nav{
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav>li{
+        margin: auto 25px;
+    }
+    .cart>li{
+        font-size: calc(var(--text--size) - 4px);
+    }
+    .cart *{
+        font-size: 90%;
+    }
+
+}
+
+.nav{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav>li{
+    text-align: left;
+}
+
+.nav a{
+    color: var(--cl--theme);
+    margin: 0;
+}
+
+.nav i{
+    color: var(--cl--theme);
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content>*{
+    width: 100%;
+}
+
+.cart{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.cart img{
+    width: 50%;
+}
+.cart>*{
+    flex: 1;
+}
+.cart .total{
+    color: var(--cl--inportant);
+}
+
+.cart button{
+    background: linear-gradient(to right, var(--cl--theme), var(--cl--theme2));
+    color: var(--cl--light);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cart button:hover{
+    background: linear-gradient(to right, var(--cl--theme2), var(--cl--inportant));
+    transition: 0.4s;
+    
+}
+
+.totalMoney{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.totalMoney>div{
+    margin: auto 5px;
+    color: var(--cl--inportant);
+}
+.totalMoney>*:last-child{
+    color: var(--cl--inportant);
+}
+.thanhtoan{
+    margin: 20px auto;
+}
+
+.thanhtoan a{
+    background: linear-gradient(to right, var(--cl--theme), var(--cl--theme2));
+    color: var(--cl--light);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.thanhtoan a:hover{
+    /* opacity: 0.7; */
+    background: linear-gradient(to right, var(--cl--theme2), var(--cl--inportant));
+}
+

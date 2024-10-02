@@ -1,0 +1,89 @@
+/* css cho trang giới thiệu */
+@media screen and (min-width: 0px) and (max-width: 1190px) {
+    .nav>li{
+        display: block;
+        height: 100%;
+        margin: auto 45px;
+    }
+    .nav{
+        width: 100vw;
+    }
+    .menber {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .nav>li{
+        margin: auto 25px;
+    }
+    .cart>li{
+        font-size: calc(var(--text--size) - 4px);
+    }
+}
+
+.nav{
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav>li{
+    text-align: left;
+}
+.nav a{
+    color: var(--cl--theme);
+    margin: 0;
+}
+.nav i{
+    color: var(--cl--theme);
+}
+
+.menber>div{
+    margin-bottom: 20px;
+}
+
+.menber{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menber > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.menber img{
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.content li{
+    list-style-type: disc; /* Kiểu chấm */
+    margin-left: 30px;
+}
+
+.content span{
+    width: 500px;
+}
+
+.content > *{
+    margin-bottom: 30px;
+}
+
+.content h2{
+    color: var(--cl--inportant);
+}
+
+.into p{
+    margin-bottom: 20px;
+}
+

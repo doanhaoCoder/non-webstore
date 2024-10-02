@@ -1,0 +1,42 @@
+.content>div>div>span{
+    color: var(--cl--inportant);
+}
+
+.content >div>div{
+margin: 10px;
+}
+
+.content input {
+    width: 600px;
+    border-radius: 5px;
+    border: 1px var(--cl--boder) solid;
+    outline: none;
+    height: 50px;
+    padding-left: 12px;
+}
+
+.content input:focus{
+    box-shadow: 0 0 0 4px rgb(255 232 240);
+    border-color: var(--cl--theme);
+}
+
+.xacnhan{
+    padding: 10px;
+    background: linear-gradient(to right, var(--cl--theme), var(--cl--theme2));
+    color: var(--cl--light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.xacnhan:hover{
+    background: linear-gradient(to right, var(--cl--theme2), var(--cl--inportant));
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 1190px) {
+    .content input {
+        width: 80%;
+    }
+}
+

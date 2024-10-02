@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowerErdtree</title>
+    <link rel="icon" href="/main/logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/all.css" />
+    <script src="/js/app.js" defer></script>
+    <script src="/js/product.js" defer></script>
+    <link rel="stylesheet" href="/css/cart.css" />
+    <script src="/js/account.js"></script>
+    <link rel="stylesheet" href="/css/account.css">
+    <style>
+      .footer>div>ul>li{
+        text-align: start;
+      }
+    </style>
+  </head>
+  <body onload="cartLoadPage()">
+    <ul class="top">
+      <li><a href="tel:0967093770">HOTLINE: 0967093770</a></li>
+      <li class="account">
+        <i class="fa-solid fa-user"></i><span id="nameUser"> Tài khoản</span>
+        <i class="fa-solid fa-caret-down"></i>
+        <ul id="account-show">
+          <li><a href="/login/login.html">Đăng nhập</a></li>
+          <li><a href="/login/register.html">Đăng ký</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="hr"></div>
+
+    <!-- phần đầu chứa logo giỏ hàng thanh tìm kiếm -->
+    <header>
+      <div class="header-left">
+        <div>
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" style="color: #163872"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-twitter" style="color: #3c74d4"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram" style="color: #e91e63"></i
+          ></a>
+        </div>
+      </div>
+      <div class="header-mid">
+        <a href="/index.html">
+          <img src="/img/logo.png" alt="LOGO" />
+          <span>FlowerErdtree</span>
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="header-sreach">
+          <input type="text" value placeholder="Tìm kiếm" id="sreach" />
+          <button>
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: var(--cl--text)"
+            ></i>
+          </button>
+          <div id="listsreach"></div>
+        </div>
+        <!-- giỏ hàng -->
+        <div class="header-cart">
+          <a href="/cart/cart.html">
+            <button onclick="clickcart()">
+              <i class="fa-solid fa-bag-shopping" style="color: white"></i>
+            </button>
+            <div class="header-cart-count"><span id="total">0</span></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- thanh điều hướng -->
+    <ul class="nav">
+      <li>
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Trở về</a>
+      </li>
+      <div class="nav-boder"></div>
+    </ul>
+    <!-- phần viên dưới đễ ngang cách nav với nội dung trang -->
+
+    <!-- phần nội dung trang -->
+    <div class="content">
+      <div class="form-login">
+        <form action="#">
+            <h2>Đăng Ký</h2>
+            <div class="input-group">
+              <label for="username">Tên đăng ký</label>
+                <input type="text" placeholder="Tên đăng ký" id="username" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Nhập số điện thoại/email</label>
+              <input type="text" placeholder="Số điện thoại/email" id="email" required>
+          </div>
+            <div class="input-group">
+              <label for="password">Mật khẩu</label>
+                <input type="password" placeholder="******" id="password" required>
+            </div>
+            <div class="input-group">
+              <label for="Password">Nhập lại mật khẩu</label>
+                <input type="password" placeholder="******" id="password-repeat" required>
+            </div>
+            <button class="btnLogin" type="submit" onclick="checkRegister()">Đăng Ký</button>
+            <div class="register login">
+              <p>Bạn đã có tài khoản rồi? <a href="login.html">Đăng nhập</a>.</p>
+              <div class="signupLink">
+                <a href="recover.html">Quên mật khẩu ?</a>
+              </div>
+       </form> 
+      </div
+    </div>
+
+    <!-- phần cuối trang -->
+    <div class="hr"></div>
+    <div class="footer">
+      <h2>Shop Hoa FlowerErdtree</h2>
+      <div>
+        <ul>
+          <li class="logo">
+            <a href="/index.html">
+              <img src="/img/logo.png" alt="LOGO" />
+              <span>FlowerErdtree</span>
+            </a>
+          </li>
+          <li>Hotline: 0967093770</li>
+          <li>Email: doannhathao23101@gmail.com</li>
+          <li><img src="/img/logoSaleNoti.png.webp" alt="" /></li>
+        </ul>
+      </div>
+      <div style="flex: 1">
+        <ul>
+          <li><span>Theo dỗi</span></li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook" style="color: #163872"></i
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter" style="color: #3c74d4"></i
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram" style="color: #e91e63"></i
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="addres">
+        <ul>
+          <li><span>Địa chỉ shop</span></li>
+          <li>
+            <span>Cửa Hàng TP HCM</span>
+            : 33 Đ. Vĩnh Viễn, Phường 2, Quận 10, Thành phố Hồ Chí Minh
+          </li>
+          <li>
+            <span>Văn Phòng TP HCM</span>
+            : 33 Đ. Vĩnh Viễn, Phường 2, Quận 10, Thành phố Hồ Chí Minh
+          </li>
+          <li>
+            <p>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ZAS</p>
+            <p>Mã số thuế: 0123456789</p>
+          </li>
+        </ul>
+      </div>
+      <div style="flex: 3">
+        <ul>
+          <li><span>Cam kết từ shop hoa tươi FlowerErdtree</span></li>
+          <li>
+            <p>
+              FlowErdtree hiểu rằng, hoa tươi dù không mang nhiều giá trị về mặt
+              vật chất, nhưng lại có ý nghĩa rất lớn về mặt tinh thần. Mỗi một
+              bó hoa gửi đi gửi gắm rất nhiều tình cảm, thông điệp yêu thương mà
+              bạn muốn gửi đến những người thân. Chính vì thế, Flower Corner
+              luôn nỗ lực nâng cao chất lượng sản phẩm và dịch vụ để mang đến
+              bạn những trải nghiệm tuyệt vời nhất khi sử dụng dịch vụ của
+              FlowerErdtree.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <div class="bottom" style="width: 100vw; left: 0;">
+    <div>
+      <i class="fa-solid fa-phone"></i>
+      <a href="tel:0967093770">Gọi ngay 0967093770</a>
+    </div>
+    <div>
+      <i class="fa-brands fa-facebook-messenger"></i
+      ><a href="https://www.facebook.com/doanhao42/">Messenger</a>
+    </div>
+    <div>
+      <i class="fa-solid fa-headset"></i>
+      <a href="/account/recover.html">Hỗ trợ</a>
+    </div>
+    <div class="upwards">
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </div>
+</html>

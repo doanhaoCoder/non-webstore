@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowerErdtree</title>
+    <link rel="icon" href="/main/logo.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/all.css" />
+    <script src="/js/app.js" defer></script>
+    <script src="/js/product.js" defer></script>
+    <script src="/cart/pay.js   "></script>
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="/css/intodiuce.css" />
+  </head>
+  <body onload="cartLoadPage()">
+    <ul class="top">
+      <li><a href="tel:0967093770">HOTLINE: 0967093770</a></li>
+      <li class="account">
+        <i class="fa-solid fa-user"></i><span id="nameUser"> Tài khoản</span>
+        <i class="fa-solid fa-caret-down"></i>
+        <ul id="account-show">
+          <li><a href="/login/login.html">Đăng nhập</a></li>
+          <li><a href="/login/register.html">Đăng ký</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="hr"></div>
+
+    <!-- phần đầu chứa logo giỏ hàng thanh tìm kiếm -->
+    <header>
+      <div class="header-left">
+        <div>
+          <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook" style="color: #163872"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-twitter" style="color: #3c74d4"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/"
+            ><i class="fa-brands fa-instagram" style="color: #e91e63"></i
+          ></a>
+        </div>
+      </div>
+      <div class="header-mid">
+        <a href="/index.html">
+          <img src="/img/logo.png" alt="LOGO" />
+          <span>FlowerErdtree</span>
+        </a>
+      </div>
+      <div class="header-right">
+        <div class="header-sreach">
+          <input type="text" value placeholder="Tìm kiếm" id="sreach" />
+          <button>
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: var(--cl--text)"
+            ></i>
+          </button>
+        </div>
+        <!-- giỏ hàng -->
+        <div class="header-cart">
+          <a href="/cart/cart.html">
+            <button onclick="clickcart()">
+              <i class="fa-solid fa-bag-shopping" style="color: white"></i>
+            </button>
+            <div class="header-cart-count"><span id="total">0</span></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- thanh điều hướng -->
+    <ul class="nav">
+      <li>
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Trở về</a>
+      </li>
+      <div class="nav-boder"></div>
+    </ul>
+    <!-- phần viên dưới đễ ngang cách nav với nội dung trang -->
+
+    <!-- phần nội dung trang -->
+    <div class="content">
+      <div class="menber">
+        <div>
+          <img src="/img/Avatar/doannhathao.jpg" alt="doannhathao" />
+          <span>Đoàn Nhật Hào 22662028</span>
+        </div>
+      </div>
+      <div class="into">
+        <p>
+            <h2>Lí do chọn đề tài:</h2>
+          Quyết định chọn đề tài về "Web bán hoa" của chúng em không chỉ đơn
+          thuần là một lựa chọn cá nhân, mà còn là kết quả của sự nhận thức về
+          sức mạnh của công nghệ thông tin trong cải thiện và tối ưu hóa các quy
+          trình kinh doanh truyền thống. Chúng em hiểu rằng bán hoa không chỉ là
+          một nghệ thuật, mà còn là một trải nghiệm tinh tế. Và việc chuyển đổi
+          nó thành một trải nghiệm trực tuyến không chỉ mang lại nhiều lợi ích
+          hấp dẫn mà còn mở ra một cánh cửa mới cho sự tương tác và tiện ích của
+          khách hàng.
+        </p>
+        <p>
+          <h2>Các chức năng của trang web:</h2>
+          <ul>
+            <li>Đăng nhập, đăng ký, khôi phục tài khoản</li>
+            <li>Tìm kiếm sản phẩm theo tên bằng thanh tìm kiếm</li>
+            <li>Thanh điều hướng (navbar)</li>
+            <li>Chuyển tab sản phẩm</li>
+            <li>Đặt hàng: Đếm số lượng sản phẩm, thêm/bớt/xóa sản phẩm, tự động tính tiền</li>
+            <li>Thanh toán: tự động reset giỏ hàng khi đã thanh toán, nhập thông tin giao hàng</li>
+            <li>Tự động đưa/sắp xếp sản phẩm vào danh sách</li>
+          </ul>
+        </p>
+        <p>
+            <h2>Ưu điểm:</h2>
+            <ul>
+                <li>Giao diện đẹp tưởng thích nhiều nhiều thiết bị</li>
+                <li>Thân thiện với người dùng</li>
+                <li>Dễ dàng tìm kiếm sản phẩm bằng thanh tìm kiếm</li>
+                <li>Sản phẩm được phân loại theo danh mục</li>
+                <li>Dễ dàng xem thông tin sản phẩm chỉ cần click vào ảnh</li>
+            </ul>
+        </p>
+        <p>
+            <h2>Cãi thiện trong tương lai:</h2>
+            <ul>
+              <li>Lưa lịch sử giao dịch</li>
+              <li>Cãi thiện hệ thống lưu trữ tài khoản</li>
+              <li>Cãi thiện phần hỗ trợ người dùng</li>
+              <li>Tối ưu hóa bố cục dòng code</li>
+              <li>Thêm nhiều hình thức thanh toán</li>
+            </ul>
+        </p>
+      </div>
+    </div>
+
+    <!-- phần cuối trang -->
+    <div class="hr"></div>
+    <div class="footer">
+      <h2>Shop Hoa FlowerErdtree</h2>
+      <div>
+        <ul>
+          <li class="logo">
+            <a href="/index.html">
+              <img src="/img/logo.png" alt="LOGO" />
+              <span>FlowerErdtree</span>
+            </a>
+          </li>
+          <li>Hotline: 0967093770</li>
+          <li>Email: doannhathao23101@gmail.com</li>
+          <li><img src="/img/logoSaleNoti.png.webp" alt="" /></li>
+        </ul>
+      </div>
+      <div style="flex: 1">
+        <ul>
+          <li><span>Theo dỗi</span></li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook" style="color: #163872"></i
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter" style="color: #3c74d4"></i
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram" style="color: #e91e63"></i
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="addres">
+        <ul>
+          <li><span>Địa chỉ shop</span></li>
+          <li>
+            <span>Cửa Hàng TP HCM</span>
+            : 33 Đ. Vĩnh Viễn, Phường 2, Quận 10, Thành phố Hồ Chí Minh
+          </li>
+          <li>
+            <span>Văn Phòng TP HCM</span>
+            : 33 Đ. Vĩnh Viễn, Phường 2, Quận 10, Thành phố Hồ Chí Minh
+          </li>
+          <li>
+            <p>CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ ZAS</p>
+            <p>Mã số thuế: 0123456789</p>
+          </li>
+        </ul>
+      </div>
+      <div style="flex: 3">
+        <ul>
+          <li><span>Cam kết từ shop hoa tươi FlowerErdtree</span></li>
+          <li>
+            <p>
+              FlowErdtree hiểu rằng, hoa tươi dù không mang nhiều giá trị về mặt
+              vật chất, nhưng lại có ý nghĩa rất lớn về mặt tinh thần. Mỗi một
+              bó hoa gửi đi gửi gắm rất nhiều tình cảm, thông điệp yêu thương mà
+              bạn muốn gửi đến những người thân. Chính vì thế, Flower Corner
+              luôn nỗ lực nâng cao chất lượng sản phẩm và dịch vụ để mang đến
+              bạn những trải nghiệm tuyệt vời nhất khi sử dụng dịch vụ của
+              FlowerErdtree.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:0967093770">Gọi ngay 0967093770</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-facebook-messenger"></i
+        ><a href="https://www.facebook.com/doanhao42/">Messenger</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-headset"></i>
+        <a href="/account/recover.html">Hỗ trợ</a>
+      </div>
+      <div class="upwards">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
