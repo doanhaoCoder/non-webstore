@@ -1,2 +1,2 @@
 # Web Font End
-- https://doanhaocoder.github.io/flower-store-basics/
+- https://doanhaocoder.github.io/WebStore-basics/
