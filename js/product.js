@@ -4,287 +4,287 @@ const products = [
         id: 1,
         name: 'Nồng Thắm',
         price: '1,500,000',
-        image: '/products/1.webp',
+        image: '../products/1.webp',
         info: 'Hoa hồng EXPLORER nhập khẩu'
     },
     {
         id: 2,
         name: 'Đong Đầy',
         price: '1,750,000',
-        image: '/products/2.webp',
+        image: '../products/2.webp',
         info: 'Hoa hồng kem, Hoa cẩm chướng trắng'
     },
     {
         id: 3,
         name: 'Điều Ước',
         price: '1,900,000',
-        image: '/products/3.webp',
+        image: '../products/3.webp',
         info: 'Hoa Đồng Tiền Đỏ & Kem'
     },
     {
         id: 4,
         name: 'Your Day',
         price: '1,470,000',
-        image: '/products/4.webp',
+        image: '../products/4.webp',
         info: 'Hoa Hồng Kem, Hoa Cẩm Chướng Trắng'
     },
     {
         id: 5,
         name: 'Yêu Thương Tím',
         price: '1,660,000',
-        image: '/products/5.webp',
+        image: '../products/5.webp',
         info: 'Hoa tặng sinh nhật'
     },
     {
         id: 6,
         name: 'Yêu Thương Ngọt Ngào',
         price: '1,150,000',
-        image: '/products/6.webp',
+        image: '../products/6.webp',
         info: 'Hoa tặng sinh nhật'
     },
     {
         id: 7,
         name: 'Yêu Thương Ấm Áp',
         price: '850,000',
-        image: '/products/7.webp',
+        image: '../products/7.webp',
         info: 'Hoa tặng sinh nhật'
     },
     {
         id: 8,
         name: 'Only You',
         price: '2,500,000',
-        image: '/products/8.webp',
+        image: '../products/8.webp',
         info: 'Hoa tặng sinh nhật'
     },
     {
         id: 9,
         name: 'Đại Phú Quý',
         price: '5,500,000',
-        image: '/products/9.webp',
+        image: '../products/9.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 10,
         name: 'Thuận Buồm Xuôi Gió',
         price: '2,200,000',
-        image: '/products/10.webp',
+        image: '../products/10.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 11,
         name: 'Thành Công Rực Rỡ',
         price: '1,9900,000',
-        image: '/products/11.webp',
+        image: '../products/11.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 12,
         name: 'Tài Lộc Song Hành',
         price: '920,000',
-        image: '/products/12.webp',
+        image: '../products/12.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 13,
         name: 'Đâm Chồi Nảy Lộc',
         price: '1,600,000',
-        image: '/products/13.webp',
+        image: '../products/13.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 14,
         name: 'Đại Thắng',
         price: '2,210,000',
-        image: '/products/14.webp',
+        image: '../products/14.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 15,
         name: 'Đại Lợi',
         price: '2,800,000',
-        image: '/products/15.webp',
+        image: '../products/15.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 16,
         name: 'Vững Tiến',
         price: '1,760,000',
-        image: '/products/16.webp',
+        image: '../products/16.webp',
         info: 'Hoa Khai Trương'
     },
     {
         id: 17,
         name: 'Peaceful',
         price: '3,600,000',
-        image: '/products/17.webp',
+        image: '../products/17.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 18,
         name: 'Phân Lưu',
         price: '1,900,000',
-        image: '/products/18.webp',
+        image: '../products/18.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 19,
         name: 'Forever',
         price: '4,000,000',
-        image: '/products/19.webp',
+        image: '../products/19.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 20,
         name: 'Yên Nghỉ',
         price: '2,200,000',
-        image: '/products/20.webp',
+        image: '../products/20.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 21,
         name: 'My Friend',
         price: '3,250,000',
-        image: '/products/21.webp',
+        image: '../products/21.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 22,
         name: 'Ánh Chiều Tà',
         price: '1,720,000',
-        image: '/products/22.webp',
+        image: '../products/22.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 23,
         name: 'Tiễn Biệt',
         price: '1,990,000',
-        image: '/products/23.webp',
+        image: '../products/23.webp',
         info: 'Hoa Tang Lễ'
     },
     {
         id: 24,
         name: 'Cuối Thu',
         price: '2,900,000',
-        image: '/products/24.webp',
+        image: '../products/24.webp',
         info: 'Hoa Tang Lễ' 
     },
     {
         id: 25,
         name: 'Chung Đôi',
         price: '800,000',
-        image: '/products/25.webp',
+        image: '../products/25.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 26,
         name: 'Nguyện Bên Em Mãi',
         price: '930,000',
-        image: '/products/26.webp',
+        image: '../products/26.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 27,
         name: 'Một Nhà',
         price: '1,000,000',
-        image: '/products/27.webp',
+        image: '../products/27.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 28,
         name: 'Nói Hộ Lòng Anh',
         price: '820,000',
-        image: '/products/28.webp',
+        image: '../products/28.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 29,
         name: 'Ngôi Nhà Hạnh Phúc',
         price: '1,300,000',
-        image: '/products/29.webp',
+        image: '../products/29.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 30,
         name: 'Ngày Đặc Biệt',
         price: '780,000',
-        image: '/products/30.webp',
+        image: '../products/30.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 31,
         name: 'Sánh Đôi',
         price: '900,000',
-        image: '/products/31.webp',
+        image: '../products/31.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 32,
         name: 'Chân Tình',
         price: '1,900,000',
-        image: '/products/32.webp',
+        image: '../products/32.webp',
         info: 'Hoa Cưới Cầm Tay'
     },
     {
         id: 33,
         name: 'Big Love',
         price: '1,500,000',
-        image: '/products/33.webp',
+        image: '../products/33.webp',
         info: 'Quà Tặng'
     },
     {
         id: 34,
         name: 'Gấu Tốt Nghiệp',
         price: '200,000',
-        image: '/products/34.webp',
+        image: '../products/34.webp',
         info: 'Quà Tặng'
     },
     {
         id: 35,
         name: 'Bánh Kem Dollar',
         price: '700,000',
-        image: '/products/35.webp',
+        image: '../products/35.webp',
         info: 'Quà Tặng'
     },
     {
         id: 36,
         name: 'Bánh Kem Con Bướm',
         price: '700,000',
-        image: '/products/36.webp',
+        image: '../products/36.webp',
         info: 'Quà Tặng'
     },
     {
         id: 37,
         name: 'Giỏ Trái Cây Ấm Áp',
         price: '1,530,000',
-        image: '/products/37.webp',
+        image: '../products/37.webp',
         info: 'Quà Tặng'
     },
     {
         id: 38,
         name: 'Giỏ Trái Cây Tươi Mát',
         price: '1,750,000',
-        image: '/products/38.webp',
+        image: '../products/38.webp',
         info: 'Quà Tặng'
     },
     {
         id: 39,
         name: 'Giáng Sinh An Lành',
         price: '2,100,000',
-        image: '/products/39.webp',
+        image: '../products/39.webp',
         info: 'Quà Tặng'
     },
     {
         id: 40,
         name: 'Set Quà nến Yêu Thương',
         price: '980,000',
-        image: '/products/40.webp',
+        image: '../products/40.webp',
         info: 'Quà Tặng'
     },
     {
         id: 41,
         name: 'Couple Cup Lover',
         price: '780,000',
-        image: '/products/41.webp',
+        image: '../products/41.webp',
         info: 'Quà Tặng'
     }
 ];
