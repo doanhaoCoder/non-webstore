@@ -1,2 +1,4 @@
 # Web Font End
-- https://doanhaocoder.github.io/WebStore-basics/
+Preview template
+
+![alt text](https://github.com/doanhaoCoder/dotfiles/blob/main/preview/preview.png)
